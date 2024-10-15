@@ -1,6 +1,7 @@
 import { Button, Image, StyleSheet, Text, Touchable, View } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
+
 function ProfileScreen ({navigation,route}){
     return(
         <View style={{flex:1, alignItems:'center'}}>
@@ -10,6 +11,7 @@ function ProfileScreen ({navigation,route}){
           alignItems: 'center', 
           justifyContent: 'center'
         }}>
+{/*button to go to the screen on the top of the stack*/}
           <TouchableOpacity 
           onPress={() => navigation.popToTop()}>
             <Text style={{
@@ -19,7 +21,7 @@ function ProfileScreen ({navigation,route}){
         </View>
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>This is the profile Screen</Text>
-
+{/*button to go to homescreen*/}
         <TouchableOpacity
             onPress={() => navigation.navigate('Home')}
         >

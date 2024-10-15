@@ -5,6 +5,7 @@ import { TouchableOpacity } from 'react-native';
 const getFullName = (firstName, secondName, thirdName) => {
   return firstName+' '+secondName+' '+thirdName;
 };
+//custom button
 const CustomButton = ({onPress}) => (
   <Pressable style={{
     backgroundColor: 'rgb(180,100,255)',
@@ -20,8 +21,9 @@ const CustomButton = ({onPress}) => (
   </Pressable>
 );
 
-
+//screen from snack expo practices
 const CatScreen = ({navigation, route}) => {
+    //using "useState" 
 const [name,setName]=useState('');
 const [inputValue, setInputValue]=useState('');
 const [number,setNumber]=useState(0)

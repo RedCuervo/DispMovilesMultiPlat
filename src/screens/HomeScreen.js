@@ -1,6 +1,7 @@
 import { Button, Image, StyleSheet, Text, Touchable, View } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
+//The home screen
 function HomeScreen({navigation}) {
     return (
       <View style={{ flex: 1, alignItems: 'center'}}>
@@ -13,6 +14,7 @@ function HomeScreen({navigation}) {
         <Text>Home Screen</Text>
         </View>
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', gap: 10}}>
+        {/*Button that sends params*/}
         <Button
         title="Go to Details"
         onPress={() => {

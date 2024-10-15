@@ -12,6 +12,7 @@ const Stack = createNativeStackNavigator();
 
 function App() {
   return (
+    //This is the navigation component, here are the screens of the project
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} />
@@ -25,12 +26,3 @@ function App() {
 }
 
 export default App;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

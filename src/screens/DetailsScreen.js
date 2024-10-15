@@ -2,6 +2,7 @@ import { Image, Pressable, StyleSheet, Text, Touchable, View } from 'react-nativ
 import { TouchableOpacity } from 'react-native';
 
 function DetailsScreen({navigation, route}) {
+  //a secret button, also using params from another screen to display a name
     const SecretButton = () => (
       <Pressable onPress={() => navigation.navigate('Custom')}>
         <Text style={{color:'black', fontSize:16}}>{route.params?.name || 'Default Name'}</Text>

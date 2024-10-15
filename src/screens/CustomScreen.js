@@ -1,5 +1,5 @@
 import { Image, StyleSheet, Text, View } from 'react-native';
-
+//custom screen, accessed by secret button
 function CustomScreen() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'violet' }}>
